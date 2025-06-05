@@ -22,16 +22,25 @@
                             <button class="btn btn-danger btn-sm btn-remover" type="button" data-produto-id="@item.Produto.Id">
                                 <i class="bi bi-trash"></i>
                             </button>
-                            <div><strong>Encontrou tudo?</strong></div>
-                            <button class="btn btn-primary btn-adicionar" type="button" data-produto-id="@item.Produto.Id">Finalizar</button>
-
-                            
                         </div>
                     </li>
                 }
             </ul>
+
             <div class="mt-3">
                 <h5>Total: R$ @Model.Total.ToString("N2")</h5>
+            </div>
+
+            <div class="mt-3">
+                <strong>Encontrou tudo?</strong>
+                <div class="d-flex gap-2 mt-2">
+                    <button class="btn btn-success btn-sm" type="button">Sim</button>
+                    <button class="btn btn-warning btn-sm" type="button">Não</button>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <button class="btn btn-primary btn-block" type="button">Finalizar Compra</button>
             </div>
         }
         else

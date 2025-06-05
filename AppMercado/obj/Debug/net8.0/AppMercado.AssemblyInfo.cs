@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppMercado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+020e7579a978d39ac00538d71d0a40ebf1a3afe9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppMercado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppMercado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

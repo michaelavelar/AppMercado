@@ -13,6 +13,7 @@ C:\Users\Milka\Desktop\AppMercado\AppMercado\obj\Debug\net8.0\AppMercado.csproj.
 C:\Users\Milka\Desktop\AppMercado\AppMercado\obj\Debug\net8.0\AppMercado.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Milka\Desktop\AppMercado\AppMercado\obj\Debug\net8.0\AppMercado.RazorAssemblyInfo.cache
 C:\Users\Milka\Desktop\AppMercado\AppMercado\obj\Debug\net8.0\AppMercado.RazorAssemblyInfo.cs
+C:\Users\Milka\Desktop\AppMercado\AppMercado\obj\Debug\net8.0\AppMercado.sourcelink.json
 C:\Users\Milka\Desktop\AppMercado\AppMercado\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Milka\Desktop\AppMercado\AppMercado\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Milka\Desktop\AppMercado\AppMercado\obj\Debug\net8.0\staticwebassets\msbuild.AppMercado.Microsoft.AspNetCore.StaticWebAssets.props

@@ -1,0 +1,28 @@
+body {
+    padding-bottom: 60px;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    font-size: 0.9em;
+}
+
+.quantidade-input, .quantidade-carrinho {
+    max-width: 50px;
+}
+
+.btn-adicionar {
+    white-space: nowrap;
+}
+
+#carrinhoContainer {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}

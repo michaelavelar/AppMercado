@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AppMercado.props" />
+</Project>

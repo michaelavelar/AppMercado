@@ -1,0 +1,63 @@
+@functions {
+    string ObterIcone(Produto produto)
+    {
+        switch (produto.Categoria)
+        {
+            case "Frutas":
+                switch (produto.Nome.ToLower())
+                {
+                    case "maçã": return "bi-apple";
+                    case "banana": return "bi-basket2"; // Ícone alternativo para banana
+                    case "laranja": return "bi-brightness-high"; // Representando sol/laranja
+                    case "melancia": return "bi-droplet-half"; // Representando suculência
+                    case "abacaxi": return "bi-flower1"; // Representando a coroa do abacaxi
+                    default: return "bi-basket";
+                }
+            case "Limpeza":
+                switch (produto.Nome.ToLower())
+                {
+                    case "detergente": return "bi-droplet"; // Líquido
+                    case "sabão em pó": return "bi-box-seam"; // Caixa de sabão
+                    case "desinfetante": return "bi-shield-check"; // Proteção
+                    case "álcool": return "bi-fire"; // Inflamável
+                    default: return "bi-bucket";
+                }
+            default:
+                return "bi-question-circle";
+        }
+    }
+}
+
+<div class="row">
+    @foreach (var produto in Model)
+    {
+        var icone = ObterIcone(produto);
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="bi @icone me-2"></i>
+                        @produto.Nome
+                    </h5>
+                    <p class="card-text">R$ @produto.Preco.ToString("N2")</p>
+                    @if (!produto.Disponivel)
+                    {
+                        <span class="badge bg-danger">Indisponível</span>
+                    }
+                </div>
+                <div class="card-footer bg-transparent">
+                    @if (produto.Disponivel)
+                    {
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary btn-minus" type="button" data-produto-id="@produto.Id">-</button>
+                            <input type="number" class="form-control text-center quantidade-input" value="1" min="1" data-produto-id="@produto.Id">
+                            <button class="btn btn-outline-secondary btn-plus" type="button" data-produto-id="@produto.Id">+</button>
+                            <button class="btn btn-primary btn-adicionar" type="button" data-produto-id="@produto.Id">Adicionar</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

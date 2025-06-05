@@ -95,4 +95,4 @@ Arquitetura seguindo o padrão MVC
 
 Componentização de views parciais para reutilização de código
 
-![Captura de tela 2025-06-05 175654](https://github.com/user-attachments/assets/8975072c-1c26-41b5-a820-1e1e28ee7fd8)
+![este](https://github.com/user-attachments/assets/dabb3445-4e34-437e-bb95-22f490da51ff)
